@@ -18,6 +18,18 @@ class CreateProductosTable extends Migration
             $table->string('nombre');
             $table->float('precio');
             $table->string('cantidad');
+
+            $table->integer('lugares_id')->unsigned();
+            $table->integer('categorias_id')->unsigned();
+
+            $table->foreign('lugares_id')
+                ->references('id')->on('lugares')
+                ->onDelete('cascade');
+
+            $table->foreign('categorias_id')
+                ->references('id')->on('categorias')
+                ->onDelete('cascade');
+
             $table->timestamps();
         });
     }

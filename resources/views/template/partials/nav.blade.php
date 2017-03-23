@@ -17,9 +17,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="">Productos</a></li>
+                <li><a href="{{ route('productos.index') }}">Productos</a></li>
                 <li><a href="{{ route('categorias.index') }}">Categorias</a></li>
-                <li><a href="">Lugares</a></li>
+                <li><a href="{{ route('lugares.index') }}">Lugares</a></li>
             </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="">Inicia Sesión</a></li>

@@ -20,6 +20,7 @@
                 <li><a href="{{ route('productos.index') }}">Productos</a></li>
                 <li><a href="{{ route('categorias.index') }}">Categorias</a></li>
                 <li><a href="{{ route('lugares.index') }}">Lugares</a></li>
+                <li><a href="{{ route('users.index') }}">Usuarios</a></li>
             </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="">Inicia Sesión</a></li>
